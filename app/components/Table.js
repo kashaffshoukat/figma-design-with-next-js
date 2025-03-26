@@ -51,7 +51,7 @@ const FigmaDesign = () => {
 
   return (
     <div className="flex h-screen">
-      <div className="w-64 bg-gray-900 text-white h-full p-4">
+      <div className="w-64 bg-customGreen text-white h-full p-4">
         <h2 className="text-2xl font-bold mb-4 mt-12">Admin Panel</h2>
         <ul className="space-y-2">
           <li className="p-2 hover:bg-gray-700 rounded cursor-pointer mt-12">
@@ -122,17 +122,17 @@ const FigmaDesign = () => {
 
         <div className="flex items-center justify-between mb-6">
           <div className="flex gap-4">
-            <button className="border border-gray-300 px-6 py-2 rounded-md text-gray-700 font-semibold">
+            <button className="border border-gray-300 px-12 py-1 rounded-md text-gray-400 font-semibold">
               Apply Filter
             </button>
-            <button className="border border-red-500 text-red-500 px-6 py-2 rounded-md hover:bg-red-100 font-semibold">
+            <button className="border border-red-500 text-red-400 px-8 py-1 rounded-md hover:bg-red-100 font-semibold">
               FILTER
             </button>
           </div>
 
           <div className="flex items-center gap-1">
             <span className="text-gray-500">Sort By:</span>
-            <select className="border border-gray-300 p-2 pr-2 rounded-md text-gray-700">
+            <select className="border border-gray-300 px-8 py-1 pr-2 rounded-md text-gray-700">
               <option>Newest</option>
             </select>
           </div>
@@ -170,7 +170,7 @@ const FigmaDesign = () => {
                       {value}
                     </td>
                   ))}
-                  <td className="py-3 px-4 mt-3 flex gap-3 items-center">
+                  <td className="py-3 px-4 mt-4 flex gap-3 items-center">
   <FaEdit className="text-green-500 hover:text-green-700 text-base cursor-pointer" />
   <FaTrash className="text-red-500 hover:text-red-700 text-base cursor-pointer" />
 </td>
