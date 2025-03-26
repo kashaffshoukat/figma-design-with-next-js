@@ -5,13 +5,13 @@ import { FaEdit, FaTrash } from "react-icons/fa";
 const FigmaDesign = () => {
   const [activeTab, setActiveTab] = useState("Cities");
   const [underlineStyle, setUnderlineStyle] = useState({ left: 0, width: 0 });
-  const [isClient, setIsClient] = useState(false); // Fix for hydration error
+  const [isClient, setIsClient] = useState(false); 
 
   const tabs = ["Cities", "Areas", "Provinces"];
   const tabRefs = useRef([]);
 
   useEffect(() => {
-    setIsClient(true); // Ensure rendering only after hydration
+    setIsClient(true); 
 
     const activeIndex = tabs.indexOf(activeTab);
     if (tabRefs.current[activeIndex]) {
@@ -47,7 +47,7 @@ const FigmaDesign = () => {
     },
   ];
 
-  if (!isClient) return null; // Prevent hydration mismatch
+  if (!isClient) return null; 
 
   return (
     <div className="flex h-screen">
